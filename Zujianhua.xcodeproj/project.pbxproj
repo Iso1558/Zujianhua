@@ -14,9 +14,12 @@
 		528BD58224F8DB6D001737AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528BD58124F8DB6D001737AF /* Assets.xcassets */; };
 		528BD58524F8DB6D001737AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528BD58324F8DB6D001737AF /* LaunchScreen.storyboard */; };
 		528BD58824F8DB6D001737AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BD58724F8DB6D001737AF /* main.m */; };
+		B1577484B028D0D2E0561F59 /* Pods_Zujianhua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B834608FD0C8F3C6EB7 /* Pods_Zujianhua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DA81C266DF36A1C1B6E043 /* Pods-Zujianhua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zujianhua.release.xcconfig"; path = "Target Support Files/Pods-Zujianhua/Pods-Zujianhua.release.xcconfig"; sourceTree = "<group>"; };
+		154376707F112F6AAA70E066 /* Pods-Zujianhua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zujianhua.debug.xcconfig"; path = "Target Support Files/Pods-Zujianhua/Pods-Zujianhua.debug.xcconfig"; sourceTree = "<group>"; };
 		528BD57224F8DB6B001737AF /* Zujianhua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zujianhua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528BD57524F8DB6B001737AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		528BD57624F8DB6B001737AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		528BD58424F8DB6D001737AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528BD58624F8DB6D001737AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		528BD58724F8DB6D001737AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2D84B834608FD0C8F3C6EB7 /* Pods_Zujianhua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zujianhua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1577484B028D0D2E0561F59 /* Pods_Zujianhua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014949FA7902CD0DAA3C93A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B834608FD0C8F3C6EB7 /* Pods_Zujianhua.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35D58347FDDB3E288F2A1969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				154376707F112F6AAA70E066 /* Pods-Zujianhua.debug.xcconfig */,
+				00DA81C266DF36A1C1B6E043 /* Pods-Zujianhua.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		528BD56924F8DB6B001737AF = {
 			isa = PBXGroup;
 			children = (
 				528BD57424F8DB6B001737AF /* Zujianhua */,
 				528BD57324F8DB6B001737AF /* Products */,
+				35D58347FDDB3E288F2A1969 /* Pods */,
+				014949FA7902CD0DAA3C93A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 528BD58B24F8DB6D001737AF /* Build configuration list for PBXNativeTarget "Zujianhua" */;
 			buildPhases = (
+				8C00F02119B1F54C226EA574 /* [CP] Check Pods Manifest.lock */,
 				528BD56E24F8DB6B001737AF /* Sources */,
 				528BD56F24F8DB6B001737AF /* Frameworks */,
 				528BD57024F8DB6B001737AF /* Resources */,
+				5D06F6782573576D282A46D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D06F6782573576D282A46D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zujianhua/Pods-Zujianhua-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zujianhua/Pods-Zujianhua-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zujianhua/Pods-Zujianhua-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C00F02119B1F54C226EA574 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zujianhua-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		528BD56E24F8DB6B001737AF /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		528BD58C24F8DB6D001737AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 154376707F112F6AAA70E066 /* Pods-Zujianhua.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		528BD58D24F8DB6D001737AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DA81C266DF36A1C1B6E043 /* Pods-Zujianhua.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
